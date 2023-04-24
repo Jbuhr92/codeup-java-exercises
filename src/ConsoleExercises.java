@@ -1,29 +1,17 @@
-//import java.util.Scanner;
-//
-//public class ConsoleExercises {
-//
-//    public static void main(String[] args){
-//        double pi = 3.14159;
-//        System.out.println("The value of pi is approximately 3.14.");
-//
-//        Scanner scanner= new Scanner(System.in);
-////        System.out.println("please enter a interger?");
-////        int userInput = scanner.nextInt();
-////        System.out.println("Your number is: " + userInput);
-//
-//        System.out.println("Enter the length of the classroom in meters:");
-//        String lengthStr = scanner.nextLine();
-//        double length = Double.parseDouble(lengthStr);
-//
-//        System.out.println("Enter the width of the classroom in meters:");
-//        String widthStr = scanner.nextLine();
-//        double width = Double.parseDouble(widthStr);
-//
-//        double area = length * width;
-//        double perimeter = 2 * (length + width);
-//
-//        System.out.printf("The area of the classroom is %.2f square meters.%n", area);
-//        System.out.printf("The perimeter of the classroom is %.2f meters.%n", perimeter);
-//
-//    }
-//}
+import java.util.Scanner;
+
+public class ConsoleExercises {
+
+    public static void main(String[] args) {
+        double pi = 3.14159;
+        System.out.printf("The value of pi is %.2f.%n", pi);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the length of your classroom at Codeup:");
+        String length = scanner.nextLine();
+        System.out.println("Enter the width of your classroom at Codeup:");
+        String width = scanner.nextLine();
+        int perimeter = (Integer.parseInt(width) + Integer.parseInt(length)) * 2;
+        System.out.printf("The perimeter of your room is: %d%n", perimeter);
+    }
+}
